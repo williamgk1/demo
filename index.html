@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DXM Wealth</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <!--<link rel="stylesheet" href="css/dataTables_bootstrap.css">-->
+	  <!-- font asesome 6 cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/css/all.css">
+	</head>
+	<body>
+	  <!--<nav class="zone white sticky">
+	      <ul class="main-nav">
+	          <li><a href=""><img src="img/logo.png" class="logo animate__animated animate__heartBeat"></a></li>
+	          <li><a href="">About</a></li>
+	          <li><a href="">Products</a></li>
+	          <li><a href="">Our Team</a></li>
+	          <li class="push"><a href="">Login</a></li>
+	      </ul>
+	  </nav>-->
+		<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+		<div class="quickrefContainer">
+			<div class="d-flex justify-content-start" style="max-width: 30rem;flex-direction: column;" id="quickref">
+				<div id="chat" data-bs-toggle="tooltip" data-bs-placement="left" title="Want to Chat to your broker?"><span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#liveChat" alt="Want to Chat to your broker?" title="Want to Chat to your broker?">💬</span></div>
+				<div id="reminder" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Set Reminder"><span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#setReminder" alt="Set Reminder" title="Set Reminder">📅</span></div>
+				<div id="statementPref" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Statement Preferences"><span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#stmPref" alt="STATEMENT PREFERENCES" title="STATEMENT PREFERENCES">📝</span></div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg white sticky">
+		  <div class="container-fluid">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <a class="navbar-brand p-0 m-0" href="#"><img src="img/logo.png" class="logo animate__animated animate__heartBeat"></a>
+		    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+		      <ul class="navbar-nav mb-2 mb-lg-0">
+		        <!--<li>
+		          <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo animate__animated animate__heartBeat"></a>
+		        </li>-->
+		        <li class="nav-item rounded">
+		          <a class="nav-link text-uppercase mnu rounded btn btn-shadow active" aria-current="page" href="#" id="mnuhome">Home</a>
+		        </li>
+		        <li class="nav-item rounded">
+		          <a class="nav-link text-uppercase mnu rounded" href="#" id="mnuproducts">Accounts</a>
+		        </li>
+		        <li class="nav-item rounded">
+		          <a class="nav-link text-uppercase mnu rounded" href="#" id="mnuactivity">Activity</a>
+		        </li>
+		        <li class="nav-item rounded">
+		          <a class="nav-link text-uppercase mnu rounded" href="#" id="mnudownloads">Downloads</a>
+		        </li>
+		        <li class="nav-item rounded">
+		          <a class="nav-link text-uppercase mnu rounded" href="#" id="mnufaq">FAQ</a>
+		        </li>
+		        <li class="nav-item rounded">
+		          <a class="nav-link text-uppercase mnu rounded" href="#" id="mnucontactus">Contact Us</a>
+		        </li>
+		        <!--<li class="nav-item rounded dropdown">
+		          <a class="nav-link rounded dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Mr. Alec Baldwin
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		            <li class="p-1"><a class="dropdown-item" href="#">📞&nbsp;Contact Details</a>
+				          <ul class="submenu dropdown-menu">
+				            <li><a class="dropdown-item">This will be a block with<br />📞&nbsp;Contact Details</a></li>
+				          </ul>
+				        </li>
+		            <li class="p-1"><a class="dropdown-item" href="#">📍&nbsp;Residential Address</a>
+				          <ul class="submenu dropdown-menu">
+				            <li><a class="dropdown-item">This will be a block with<br /> 📍&nbsp;Residential Address</a></li>
+				          </ul>
+				        </li>
+		            <li class="p-1"><a class="dropdown-item" href="#">📄&nbsp;Tax Details</a>
+				          <ul class="submenu dropdown-menu">
+				            <li><a class="dropdown-item">This will be a block with<br /> 📄&nbsp;Tax Details</a></li>
+				          </ul>
+				        </li>
+		            <li class="p-1"><a class="dropdown-item" href="#">💳&nbsp;Banking Details</a>
+				          <ul class="submenu dropdown-menu">
+				            <li><a class="dropdown-item">This will be a block with<br /> 💳&nbsp;Banking Details</a></li>
+				          </ul>
+				        </li>
+
+				        !--<li> <a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
+				          <ul class="submenu dropdown-menu">
+				            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+				            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+				            <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+				              <ul class="submenu dropdown-menu">
+				                <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+				                <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+				              </ul>
+				            </li>
+				            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+				            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+				          </ul>
+				        </li>--
+
+		          </ul>
+		        </li>-->
+
+
+					
+
+
+
+		      </ul>
+		      <div class="d-flex ms-auto">
+		        <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		        <button class="btn btn-outline-success" type="submit">Search</button>-->
+		        <ul class="navbar-nav mb-2 mb-lg-1">
+			        <li class="">
+			          <a class="btn btn-primary btn-shadow" href="#" type="button" alt="Click here to retrieve your live portfolio balance." title="Click here to retrieve your live portfolio balance.">Live Balance</a>
+			        </li>
+			        <li class="">
+			          <a class="btn btn-primary btn-shadow" href="#" type="button" alt="Click here to be redirected to the Bank Portal." title="Click here to be redirected to the Bank Portal.">Login</a>
+			        </li>
+			      </ul>
+		      </div>
+		    </div>
+		  </div>
+		</nav>
+	  <div class="pt-5 contentWrapper">
+	  	<div class="spacer"></div>
+			<!--<div class="d-flex justify-content-start bd-highlight mb-2">
+			  <div class="p-2 bd-highlight text-blue debug">Annual Statement</div>
+			  <div class="p-2 bd-highlight debug">x</div>
+			  <div class="p-2 bd-highlight debug">y</div>
+			</div>
+			<div class="d-flex justify-content-end bd-highlight mb-2">
+			  <div class="p-2 bd-highlight">Flex item</div>
+			  <div class="p-2 bd-highlight">Flex item</div>
+			  <div class="p-2 bd-highlight">Flex item</div>
+			</div>
+			<div class="d-flex justify-content-center bd-highlight mb-2">
+			  <div class="p-2 bd-highlight">Flex item</div>
+			  <div class="p-2 bd-highlight">Flex item</div>
+			  <div class="p-2 bd-highlight">Flex item</div>
+			</div>
+			<div class="d-flex justify-content-between bd-highlight mb-2">
+			  <div class="p-2 bd-highlight">Flex item</div>
+			  <div class="p-2 bd-highlight">Flex item</div>
+			  <div class="p-2 bd-highlight">Flex item</div>
+			</div>
+			<div class="d-flex justify-content-around bd-highlight mb-2">
+			  <div class="p-2 bd-highlight">Flex item</div>
+			  <div class="p-2 bd-highlight">Flex item</div>
+			  <div class="p-2 bd-highlight">Flex item</div>
+			</div>
+			<div class="d-flex justify-content-evenly bd-highlight">
+			  <div class="p-2 bd-highlight">Flex item</div>
+			  <div class="p-2 bd-highlight">Flex item</div>
+			  <div class="p-2 bd-highlight">Flex item</div>
+			</div>-->
+		  <div id="home" class="pt-5 contentContainer">
+		  	<section id="summaryLg">
+					<div class="d-flex justify-content-start bd-highlight mb-2 ps-5">
+					  <div class="p-2 pb-0 bd-highlight text-blue text-bold text-1-5">
+					  	Annual Statement <br />
+					  	<span class="text-normal text-blue">1 January 2022 - 31 December 2022</span>
+					  </div>
+					  <div class="p-2 bd-highlight">
+						  <ul class="navbar-nav mb-2 mb-lg-0">
+				        <li class="nav-item rounded dropdown">
+				          <a class="nav-link btn btn-shadow p-2 rounded dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				            Mr. Alec Baldwin
+				          </a>
+				          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				            <li class="p-1"><a class="dropdown-item" href="#">📞&nbsp;Contact Details</a>
+						          <ul class="submenu dropdown-menu">
+						            <li><a class="dropdown-item">This will be a block with<br />📞&nbsp;Contact Details</a></li>
+						          </ul>
+						        </li>
+				            <li class="p-1"><a class="dropdown-item" href="#">📍&nbsp;Residential Address</a>
+						          <ul class="submenu dropdown-menu">
+						            <li><a class="dropdown-item">This will be a block with<br /> 📍&nbsp;Residential Address</a></li>
+						          </ul>
+						        </li>
+				            <li class="p-1"><a class="dropdown-item" href="#">📄&nbsp;Tax Details</a>
+						          <ul class="submenu dropdown-menu">
+						            <li><a class="dropdown-item">This will be a block with<br /> 📄&nbsp;Tax Details</a></li>
+						          </ul>
+						        </li>
+				            <li class="p-1"><a class="dropdown-item" href="#">💳&nbsp;Banking Details</a>
+						          <ul class="submenu dropdown-menu">
+						            <li><a class="dropdown-item">This will be a block with<br /> 💳&nbsp;Banking Details</a></li>
+						          </ul>
+						        </li>
+						        <!--<li> <a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
+						          <ul class="submenu dropdown-menu">
+						            <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
+						            <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
+						            <li><a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+						              <ul class="submenu dropdown-menu">
+						                <li><a class="dropdown-item" href="#">Multi level 1</a></li>
+						                <li><a class="dropdown-item" href="#">Multi level 2</a></li>
+						              </ul>
+						            </li>
+						            <li><a class="dropdown-item" href="#">Submenu item 4</a></li>
+						            <li><a class="dropdown-item" href="#">Submenu item 5</a></li>
+						          </ul>
+						        </li>-->
+				          </ul>
+				        </li>
+						  </ul>
+					  </div>
+					  <div class="p-2 bd-highlight">&nbsp;</div>
+					</div>
+			  	<div class="portfolioContainer"><!--<img class="cover" src="./img/logo.png">-->
+						<div class="d-flex justify-content-evenly bd-highlight mb-2 pt-3 pb-3">
+						  <div class="p-0 bd-highlight">&nbsp;</div>
+						  <div class="p-0 pb-0 bd-highlight text-lightblue text-normal text-1-5">
+						  	Your current portfolio balance is <br />
+						  	<span class="text-6 text-lightbrown p-0">&dollar;1,500,000</span><br />
+						  	<span class="p-0">1 January 2022 - 31 December 2022</span>
+						  </div>
+						  <div class="p-0 bd-highlight">&nbsp;</div>
+						</div>
+			  	</div>
+					<!--<div class="p-0"><img src="img/portfoliobyperiod.png" class="w-100"></div>-->
+					<div class="p-0 d-flex justify-content-evenly bd-highlight mb-2 portfolioPeriod">
+						<div class="p-0 bd-highlight">&nbsp;</div>
+						<div class="p-0 bd-highlight d-flex justify-content-evenly rounded-pill periodGroup">
+							<div class="p-1 ps-4 pe-4 bd-highlight rounded-pill text-darkblue fw-bold period" id="perOneMth">1M</div>
+							<div class="p-1 ps-4 pe-4 bd-highlight rounded-pill text-darkblue fw-bold period" id="perThreeMth">3M</div>
+							<div class="p-1 ps-4 pe-4 bd-highlight rounded-pill text-darkblue fw-bold period activePill" id="perSixMth">6M</div>
+							<div class="p-1 ps-4 pe-4 bd-highlight rounded-pill text-darkblue fw-bold period" id="perOneYr">1Y</div>
+							<div class="p-1 ps-4 pe-4 bd-highlight rounded-pill text-darkblue fw-bold period" id="perThreeYr">3Y</div>
+						</div>
+						<div class="p-0 bd-highlight">&nbsp;</div>
+					</div>
+				</section>
+				<article class="flow" id="investments">
+		      <div class="articleContainer justify-content-evenly" id="articleContainer">
+		        <div class="box rounded-4 btn-shadow">
+		        	<h2 class="text-darkblue pt-4 pb-4 text-2">
+		        		Investment Account<br /><span class="text-1">Account Number: 1-8000-1133</span>
+		        	</h2>
+		        	<div class="text-center text-black text-3 text-shadow pt-1 pb-4">&dollar; 990,000</div>
+		        	<span><a href="#" class="pt-4 fst-italic text-1-5 more" id="AccInvest">View More <span style="font-size:25px;">&#10145;</span></a></span>
+		        </div>
+		        <div class="box rounded-4 btn-shadow">
+		        	<h2 class="text-darkblue pt-4 pb-4">
+		        		Retirement Income Fund<br /><span class="text-1">Account Number: 1-9000-2244</span>
+		        	</h2>
+		        	<div class="text-center text-black text-3 text-shadow pt-1 pb-4">&dollar; 510,000</div>
+		        	<span><a href="#" class="pt-4 fst-italic text-1-5 more" id="AccRIF">View More <span style="font-size:25px;">&#10145;</span></a></span>
+		        </div>
+		        <!--<div class="box rounded-4 btn-shadow">Item two</div>
+		        <div class="box rounded-4 btn-shadow">Item three</div>
+		        <div class="box rounded-4 btn-shadow">Item four has more text</div>
+		        <div class="box rounded-4 btn-shadow">A long word: Myrmecophilous A long word: Myrmecophilous A long word: Myrmecophilous A long word: Myrmecophilous A long word: Myrmecophilous</div>
+		        <div class="box rounded-4 btn-shadow">Item six</div>-->
+		      </div>
+				</article>
+
+				<section class="contentContainer" id="breakdown" style="display:none;">
+					<div class="p-0 bd-highlight mb-2">
+						<div class="p-0 bd-highlight breakdownHeader text-lightbrown text-normal text-2 text-shadow-def">
+							<div class="col-sm-4 col-md-4 col-lg-4 p-1 ps-3 bd-highlight fw-normal text-start text-3 text-center-m" style="line-height: 100%;">Portfolio Balance:</div>
+							<div class="col-sm-4 col-md-4 col-lg-4 p-1 bd-highlight fw-normal text-end text-3 text-center-m">&dollar;1,500,000</div>
+							<div class="col-sm-4 col-md-4 col-lg-4 p-1 pe-4 bd-highlight fw-normal text-end text-1-5 text-center-m">1 January 2022 - 31 December 2022</div>
+						</div>
+						<section class="accordian" id="homeAccordian1" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('h1');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					        	<div class="col-md-10 text-start">Account value over time</div>
+					        	<div class="col-md-2 text-end pe-4"><img src="img/icon_expand_dark.png" class="exp" id="h1"></div>
+						      </button>
+					      </div>
+								<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse show" id="collapseOne" data-bs-parent="#homeAccordian1">
+									<div class="chartContainer btn-shadow" id="chartdiv1"></div>
+								</div>
+							</div>
+						</section>
+						<section class="accordian" id="homeAccordian2" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('h2');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						        <div class="col-md-10 text-start">Accounts &amp; Asset Allocation</div>
+						        <div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="exp" id="h2"></div>
+						      </button>
+					      </div>
+					      <div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseTwo" data-bs-parent="#homeAccordian2">
+									<article class="flow">
+							      <div class="articleContainer justify-content-evenly">
+							        <div class="box-noborder w-47 rounded chartContainer btn-shadow">
+							        	<div class="text-bold text-2">Accounts</div>
+							        	<div id="chartdiv2_1"></div>
+							        </div>
+							        <div class="box-noborder w-47 rounded chartContainer btn-shadow">
+							        	<div class="text-bold text-2">Asset Allocation</div>
+							        	<div id="chartdiv2_2"></div>
+							        	<div class="d-flex"><a class="nav-link btn btn-white btn-shadow p-1 rounded text-1" href="#" id="h2_2Update" role="button" role="button" alt="Click here to update the benchmark results." title="Click here to update the benchmark results.">Update Benchmark Live</a></div>
+							        </div>
+							      </div>
+									</article>
+								</div>
+							</div>
+						</section>
+						<section  class="accordian" id="homeAccordian3" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('h3');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						        <div class="col-md-10 text-start">Internal rate of return (onshore)</div>
+						        <div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="exp" id="h3"></div>
+						      </button>
+					      </div>
+								<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseThree" data-bs-parent="#homeAccordian3">
+									<article class="flow">
+							      <div class="articleContainer justify-content-evenly">
+							        <div class="box-noborder w-47 rounded chartContainer btn-shadow">
+							        	<div class="text-bold text-1-5">Internal rate of return (onshore)</div>
+							        	<div id="chartdiv3_1"></div>
+							        </div>
+							        <div class="box-noborder w-47 rounded chartContainer btn-shadow">
+							        	<div class="text-bold text-1-5">Internal rate of return - benchmark (onshore)</div>
+							        	<div id="chartdiv3_2"></div>
+							        	<div class="d-flex"><a class="nav-link btn btn-white btn-shadow p-1 rounded text-1" href="#" id="h3Update" role="button" role="button" alt="Click here to update the benchmark results." title="Click here to update the benchmark results.">Update Benchmark Live</a></div>
+							        </div>
+							      </div>
+									</article>
+								</div>
+							</div>
+						</section>
+						<section  class="accordian" id="homeAccordian4" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('h4');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+						        <div class="col-md-10 text-start">Internal rate of return (offshore)</div>
+						        <div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="exp" id="h4"></div>
+						      </button>
+					      </div>
+								<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseFour" data-bs-parent="#homeAccordian4">
+									<article class="flow">
+							      <div class="articleContainer justify-content-evenly">
+							        <div class="box-noborder w-47 rounded chartContainer btn-shadow">
+							        	<div class="text-bold text-1-5">Internal rate of return (offshore)</div>
+							        	<div id="chartdiv4_1"></div>
+							        </div>
+							        <div class="box-noborder w-47 rounded chartContainer btn-shadow">
+							        	<div class="text-bold text-1-5">Internal rate of return - benchmark (offshore)</div>
+							        	<div id="chartdiv4_2"></div>
+							        	<div class="d-flex"><a class="nav-link btn btn-white btn-shadow p-1 rounded text-1" href="#" id="h4Update" role="button" role="button" alt="Click here to update the benchmark results." title="Click here to update the benchmark results.">Update Benchmark Live</a></div>
+							        </div>
+							      </div>
+									</article>
+								</div>
+							</div>
+						</section>
+						<section  class="accordian" id="homeAccordian5" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('h5');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+						        <div class="col-md-10 text-start">Inflows &amp; outflows (offshore)</div>
+						        <div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="exp" id="h5"></div>
+						      </button>
+					      </div>
+								<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseFive" data-bs-parent="#homeAccordian5">
+									<div class="chartContainer btn-shadow" id="chartdiv5"></div>
+								</div>
+							</div>
+						</section>
+						<section  class="accordian" id="homeAccordian6" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('h6');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+						        <div class="col-md-10 text-start">Top Holdings</div>
+						        <div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="exp" id="h6"></div>
+						      </button>
+					      </div>
+								<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseSix" data-bs-parent="#homeAccordian6">
+									<div class="chartContainer btn-shadow" id="chartdiv6">
+										<table class="table table-primary table-striped table-hover">
+										  <thead>
+										    <tr>
+										      <th scope="col" class="text-lightbrown text-1-5">Investment Name</th>
+										      <th scope="col" class="text-lightbrown text-1-5">Amount</th>
+										      <th scope="col" class="text-lightbrown text-1-5">%</th>
+										      <th scope="col">&nbsp;</th>
+										    </tr>
+										  </thead>
+										  <tbody>
+										    <tr>
+										      <td scope="row">DXM Global Equity FoF B2</td>
+										      <td>&dollar;525,000</td>
+										      <td>35.0%</td>
+										      <td><button type="button" class="btn-primary rounded btn-shadow text-uppercase" alt="Click here to retrieve your live fund balance." title="Click here to retrieve your live fund balance.">Live Fund Balance</button>&nbsp;&nbsp;&nbsp;&nbsp;<a href="docs/DXM Global Equity FoF B2.pdf" target="_blank"><button type="button" class="btn-primary rounded btn-shadow">FACTSHEET</button></a></td>
+										    </tr>
+										    <tr>
+										      <td scope="row">DXM Global Equity FoF B1​</td>
+										      <td>&dollar;270,000​</td>
+										      <td>18.0%</td>
+										      <td><button type="button" class="btn-primary rounded btn-shadow text-uppercase" alt="Click here to retrieve your live fund balance." title="Click here to retrieve your live fund balance.">Live Fund Balance</button>&nbsp;&nbsp;&nbsp;&nbsp;<a href="docs/DXM Global Equity FoF B1.pdf" target="_blank"><button type="button" class="btn-primary rounded btn-shadow">FACTSHEET</button></a></td>
+										    </tr>
+										    <tr>
+										      <td scope="row">DXM US Equity Fund B2</td>
+										      <td>&dollar;195,000</td>
+										      <td>13.0%</td>
+										      <td><button type="button" class="btn-primary rounded btn-shadow text-uppercase" alt="Click here to retrieve your live fund balance." title="Click here to retrieve your live fund balance.">Live Fund Balance</button>&nbsp;&nbsp;&nbsp;&nbsp;<a href="docs/DXM US Equity Fund B2.pdf"><button type="button" class="btn-primary rounded btn-shadow">FACTSHEET</button></a></td>
+										    </tr>
+										    <tr>
+										      <td scope="row">DXM US Equity Fund B1</td>
+										      <td>&dollar;300,000</td>
+										      <td>20.0%</td>
+										      <td><button type="button" class="btn-primary rounded btn-shadow text-uppercase" alt="Click here to retrieve your live fund balance." title="Click here to retrieve your live fund balance.">Live Fund Balance</button>&nbsp;&nbsp;&nbsp;&nbsp;<a href="docs/DXM US Equity Fund B1.pdf"><button type="button" class="btn-primary rounded btn-shadow">FACTSHEET</button></a></td>
+										    </tr>
+										    <tr>
+										      <td scope="row">DXM US Bond Fund A</td>
+										      <td>&dollar;120,000​</td>
+										      <td>8.0%</td>
+										      <td><button type="button" class="btn-primary rounded btn-shadow text-uppercase" alt="Click here to retrieve your live fund balance." title="Click here to retrieve your live fund balance.">Live Fund Balance</button>&nbsp;&nbsp;&nbsp;&nbsp;<a href="docs/DXM US Bond Fund A.pdf"><button type="button" class="btn-primary rounded btn-shadow">FACTSHEET</button></a></td>
+										    </tr>
+										    <tr>
+										      <td scope="row">DXM UA Bond Fund B1</td>
+										      <td>&dollar;90,000</td>
+										      <td>6.0%</td>
+										      <td><button type="button" class="btn-primary rounded btn-shadow text-uppercase" alt="Click here to retrieve your live fund balance." title="Click here to retrieve your live fund balance.">Live Fund Balance</button>&nbsp;&nbsp;&nbsp;&nbsp;<a href="docs/DXM UA Bond Fund B1.pdf"><button type="button" class="btn-primary rounded btn-shadow">FACTSHEET</button></a></td>
+										    </tr>
+										  </tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+		  </div>
+
+		  <div id="products" class="pt-5 contentContainer" style="display:none">
+				<div class="p-0 pt-2 bd-highlight mb-2">
+					<div class="subnavContainer justify-content-center">
+						<div class="d-flex align-content-start subnav">
+							<div class="col-lg-7 col-md-6 col-sm-7"><a class="btn btn-shadow active nav-link text-uppercase rounded p-2 submnu" href="#" id="subprodAccInvest">Investment Account</a></div>
+							<div class="col-lg-5 col-md-6 col-sm-5"><a class="btn nav-link text-uppercase rounded p-2 submnu" href="#" id="subprodAccRIF">RIF Account</a></div>
+						</div>
+					</div>
+					<section id="prodAccRIF" style="display:none;">
+						&nbsp;
+					</section>
+					<section id="prodAccInvest">
+						<div class="p-0 bd-highlight breakdownHeader text-lightbrown text-normal text-2 text-shadow-def">
+							<div class="d-flex align-content-start" style="width: 100%; flex-wrap: wrap;">
+								<!--<div class="col-lg-5 col-md-4 col-sm-4 p-1 ps-3 bd-highlight fw-normal text-start text-3 text-center-m" style="line-height: 100%;">
+									INVESTMENT ACCOUNT
+									<span id="investInfo" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<b>Investment Objective: Aggressive Growth</b> <br />My primary investment objective is to maximize the total return potential of my account. I am able and willing to tolerate a high to very high level of risk and price volatility including potential for significant temporary and permanent loss of capital. I do not require the portfolio to be diversified, to produce or supplement my income, and I am prepared to accept periods of liquidity.</p>">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+										  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+										  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+										</svg>
+									</span>
+								</div>-->
+								<div class="col-lg-5 col-md-12 col-sm-12 p-1 ps-3 bd-highlight fw-normal text-start text-3 text-center-m">
+									INVESTMENT ACCOUNT
+									<span id="investInfo" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<b>Investment Objective: Aggressive Growth</b> <br />My primary investment objective is to maximize the total return potential of my account. I am able and willing to tolerate a high to very high level of risk and price volatility including potential for significant temporary and permanent loss of capital. I do not require the portfolio to be diversified, to produce or supplement my income, and I am prepared to accept periods of liquidity.</p>">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+										  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+										  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+										</svg>
+									</span>
+								</div>
+								<div class="col-lg-5 col-md-6 col-sm-6 p-1 pt-3 bd-highlight fw-normal text-end text-start text-2 text-center-m">Contract value:</div>
+								<div class="col-lg-2 col-md-6 col-sm-6 p-1 pe-4 bd-highlight fw-normal text-end text-3 text-center-m">&dollar;990,000</div>
+							</div>
+						</div>
+						<section class="accordian" id="productAccordian1" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('p1');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProdOne" aria-expanded="true" aria-controls="collapseProdOne">
+					        	<div class="col-md-10 text-start">Account value over time​</div>
+					        	<div class="col-md-2 text-end pe-4"><img src="img/icon_expand_dark.png" class="exp" id="p1"></div>
+						      </button>
+					      </div>
+								<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse show" id="collapseProdOne" data-bs-parent="#productAccordian1">
+									<div class="chartContainer btn-shadow" id="chartdivP1"></div>
+									<!-- <div class="chartContainer btn-shadow" style="height: 600px;">
+										<div id="chartdivP1"></div>
+									</div> -->
+								</div>
+							</div>
+						</section>
+						<section class="accordian" id="productAccordian2" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('p2');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProdTwo" aria-expanded="true" aria-controls="collapseProdTwo">
+					        	<div class="col-md-10 text-start">Asset Allocation &amp; Internal rate of return (onshore)​</div>
+					        	<div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="clps" id="p2"></div>
+						      </button>
+					      </div>
+								<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseProdTwo" data-bs-parent="#productAccordian2">
+									<article class="flow">
+							      <div class="articleContainer justify-content-evenly">
+							        <div class="box-noborder w-47 rounded chartContainer btn-shadow">
+							        	<div class="text-bold text-2">Asset Allocation</div>
+							        	<div id="chartdivP2_1"></div>
+							        	<div class="d-flex"><a class="nav-link btn btn-white btn-shadow p-1 rounded text-1" href="#" id="h4Update" role="button" alt="Click here to update the benchmark results." title="Click here to update the benchmark results.">Update Benchmark Live</a></div>
+							        </div>
+							        <div class="box-noborder w-47 rounded chartContainer btn-shadow">
+							        	<div class="text-bold text-2">&nbsp;</div>
+							        	<div id="chartdivP2_2"></div>
+							        </div>
+							      </div>
+									</article>
+								</div>
+							</div>
+						</section>
+						<section  class="accordian" id="productAccordian3" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('p3');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProdThree" aria-expanded="true" aria-controls="collapseProdThree">
+						        <div class="col-md-10 text-start">Top Holdings</div>
+						        <div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="exp" id="p3"></div>
+						      </button>
+					      </div>
+								<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseProdThree" data-bs-parent="#productAccordian3">
+									<div class="chartContainer btn-shadow" id="chartdivP3">
+										<table class="table table-primary table-striped table-hover">
+										  <thead>
+										    <tr>
+										      <th scope="col" class="text-start ps-2 text-lightbrown text-1-5">Investment Name</th>
+										      <th scope="col" class="text-lightbrown text-1-5">Amount</th>
+										      <th scope="col" class="text-lightbrown text-1-5">%</th>
+										      <th scope="col" class="text-lightbrown text-1-5">Units</th>
+										      <th scope="col" class="text-lightbrown text-1-5">Unit Price</th>
+										      <th scope="col" class="text-lightbrown text-1-5">Book Value</th>
+										      <th scope="col" class="text-lightbrown text-1-5">Market Value</th>
+										      <th scope="col">&nbsp;</th>
+										    </tr>
+										  </thead>
+										  <tbody>
+										    <tr>
+										      <td scope="row" class="text-start ps-2">DXM Global Equity FoF B2</td>
+										      <td>&dollar;525000</td>
+										      <td>53%</td>
+										      <td>500</td>
+										      <td>&dollar;1050</td>
+										      <td>&dollar;405000</td>
+										      <td>&dollar;525000</td>
+										      <td>
+											      <div class="genericContainer justify-content-evenly p-0">
+											      	<div class="p-1"><button type="button" class="btn-primary rounded btn-shadow text-uppercase" alt="Click here to retrieve your live fund balance." title="Click here to retrieve your live fund balance.">Live Fund Balance</button></div>
+											      	<div class="p-1"><a href="docs/DXM Global Equity FoF B2.pdf" target="_blank"><button type="button" class="btn-primary rounded btn-shadow">FACTSHEET</button></a></div>
+											      	<div class="p-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Want to Chat to your broker?"><span href="#" class="btn p-0 text-1-5" data-bs-toggle="modal" data-bs-target="#liveChat" alt="Want to Chat to your broker?" title="Want to Chat to your broker?">💬</span></div>
+											      </div>
+										      </td>
+										    </tr>
+										    <tr>
+										      <td scope="row" class="text-start ps-2">DXM Global Equity FoF B1​</td>
+										      <td>&dollar;270000</td>
+										      <td>27.3%</td>
+										      <td>750</td>
+										      <td>&dollar;360</td>
+										      <td>&dollar;185000</td>
+										      <td>&dollar;270000</td>
+										      <td>
+										      	<!--<div class="row p-0 m-0">
+											      	<div class="col-4"><button type="button" class="btn-primary rounded btn-shadow">UPDATE</button></div>
+											      	<div class="col-6"><button type="button" class="btn-primary rounded btn-shadow">FACTSHEET</button></div>
+											      	<div class="col-2" data-bs-toggle="tooltip" data-bs-placement="left" title="Want to Chat to your broker?"><span href="#" class="btn p-0 text-1-5" data-bs-toggle="modal" data-bs-target="#liveChat" alt="Want to Chat to your broker?" title="Want to Chat to your broker?">💬</span></div>
+											      </div>-->
+											      <div class="genericContainer justify-content-evenly p-0">
+											      	<div class="p-1"><button type="button" class="btn-primary rounded btn-shadow text-uppercase" alt="Click here to retrieve your live fund balance." title="Click here to retrieve your live fund balance.">Live Fund Balance</button></div>
+											      	<div class="p-1"><a href="docs/DXM Global Equity FoF B1.pdf" target="_blank"><button type="button" class="btn-primary rounded btn-shadow">FACTSHEET</button></a></div>
+											      	<div class="p-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Want to Chat to your broker?"><span href="#" class="btn p-0 text-1-5" data-bs-toggle="modal" data-bs-target="#liveChat" alt="Want to Chat to your broker?" title="Want to Chat to your broker?">💬</span></div>
+											      </div>
+										      </td>
+										    </tr>
+										    <tr>
+										      <td scope="row" class="text-start ps-2">DXM US Equity Fund B2</td>
+										      <td>&dollar;195000</td>
+										      <td>19.7%</td>
+										      <td>1000</td>
+										      <td>&dollar;195</td>
+										      <td>&dollar;190000</td>
+										      <td>&dollar;270000</td>
+										      <td>
+											      <div class="genericContainer justify-content-evenly p-0">
+											      	<div class="p-1"><button type="button" class="btn-primary rounded btn-shadow text-uppercase" alt="Click here to retrieve your live fund balance." title="Click here to retrieve your live fund balance.">Live Fund Balance</button></div>
+											      	<div class="p-1"><a href="docs/DXM US Equity Fund B2.pdf" target="_blank"><button type="button" class="btn-primary rounded btn-shadow">FACTSHEET</button></a></div>
+											      	<div class="p-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Want to Chat to your broker?"><span href="#" class="btn p-0 text-1-5" data-bs-toggle="modal" data-bs-target="#liveChat" alt="Want to Chat to your broker?" title="Want to Chat to your broker?">💬</span></div>
+											      </div>
+										      </td>
+										    </tr>
+										  </tbody>
+										  <tfoot>
+										    <tr>
+										      <td scope="row">&nbsp;</td>
+										      <td>&dollar;990000</td>
+										      <td>&nbsp;</td>
+										      <td>&nbsp;</td>
+										      <td>&nbsp;</td>
+										      <td>&dollar;780000</td>
+										      <td>&dollar;990000</td>
+										      <td>&nbsp;</td>
+										    </tr>
+										  </tfoot>
+										</table>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section  class="accordian" id="productAccordian4" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('p4');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProdFour" aria-expanded="true" aria-controls="collapseProdFour">
+						        <div class="col-md-10 text-start">Beneficiaries</div>
+						        <div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="exp" id="p4"></div>
+						      </button>
+					      </div>
+								<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseProdFour" data-bs-parent="#productAccordian4">
+									<div class="chartContainer btn-shadow w-50" id="chartdivP4">
+										<table class="table table-primary table-striped table-hover">
+										  <thead>
+										    <tr>
+										      <th scope="col" class="text-lightbrown text-1-5">Name</th>
+										      <th scope="col" class="text-lightbrown text-1-5">%</th>
+										    </tr>
+										  </thead>
+										  <tbody>
+										    <tr>
+										      <td scope="row">Justin Tyme​</td>
+										      <td>25%</td>
+										    </tr>
+										    <tr>
+										      <td scope="row">Holly Day​</td>
+										      <td>25%</td>
+										    </tr>
+										    <tr>
+										      <td scope="row">Penny Wise​</td>
+										      <td>25%</td>
+										    </tr>
+										    <tr>
+										      <td scope="row">Owen Cash​</td>
+										      <td>25%</td>
+										    </tr>
+										  </tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+				</div>
+			</div>
+		  <div id="activity" class="pt-5 contentContainer" style="display:none">
+				<div class="p-0 pt-2 bd-highlight mb-2">
+					<div class="subnavContainer justify-content-center">
+<!-- 						<div class="d-flex align-content-start subnav">
+							<div class="col-lg-7 col-md-6 col-sm-7"><a class="btn nav-link text-uppercase rounded p-2 submnu" href="#" id="subactAccInvest">Investment Account</a></div>
+							<div class="col-lg-5 col-md-6 col-sm-5"><a class="btn btn-shadow active nav-link text-uppercase rounded p-2 submnu" href="#" id="subactAccRIF">RIF Account</a></div>
+						</div> -->
+						<div class="subnavContainer justify-content-center">
+							<div class="d-flex align-content-start subnav">
+								<div class="col-lg-7 col-md-6 col-sm-7"><a class="btn btn-shadow active nav-link text-uppercase rounded p-2 submnu" href="#" id="subactAccInvest">Investment Account</a></div>
+								<div class="col-lg-5 col-md-6 col-sm-5"><a class="btn nav-link text-uppercase rounded p-2 submnu" href="#" id="subactAccRIF">RIF Account</a></div>
+							</div>
+						</div>
+					</div>
+					<section id="actAccInvest" style="display:none;">&nbsp;</section>
+					<section id="actAccRIF">
+
+						<div class="p-0 bd-highlight breakdownHeader text-lightbrown text-normal text-2 text-shadow-def">
+							<div class="d-flex align-content-start" style="width: 100%; flex-wrap: wrap;">
+								<div class="col-lg-5 col-md-12 col-sm-12 p-1 ps-3 bd-highlight fw-normal text-start text-3 text-center-m">
+									RIF ACCOUNT
+									<span id="rifInfo" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<b>Investment Objective: Low Risk</b> <p>My primary investment objective for this account is to protect capital rather than to seek superior returns. With few expectations, I have a low tolerance for risk and seek a similarly low degree of price volatility. I do not wish to own any equities other than equities who primary purpose is to produce income such as good quality preferred shares.</p>">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+										  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+										  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+										</svg>
+									</span>
+								</div>
+								<div class="col-lg-5 col-md-6 col-sm-6 p-1 pt-3 bd-highlight fw-normal text-end text-start text-2 text-center-m">Contract value:</div>
+								<div class="col-lg-2 col-md-6 col-sm-6 p-1 pe-4 bd-highlight fw-normal text-end text-3 text-center-m">&dollar;510,000</div>
+							</div>
+						</div>
+
+
+
+						<!-- <div class="p-0 bd-highlight breakdownHeader text-lightbrown text-normal text-2 text-shadow-def">
+							<div class="col-sm-4 col-md-4 col-lg-4 p-1 ps-3 bd-highlight fw-normal text-start text-3 text-center-m" style="line-height: 100%;">
+								RIF ACCOUNT
+								<span id="rifInfo" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<b>Investment Objective: Low Risk</b> <p>My primary investment objective for this account is to protect capital rather than to seek superior returns. With few expectations, I have a low tolerance for risk and seek a similarly low degree of price volatility. I do not wish to own any equities other than equities who primary purpose is to produce income such as good quality preferred shares.</p>">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+									  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+									  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+									</svg>
+								</span>
+							</div>
+							<div class="col-sm-4 col-md-6 col-lg-6 p-1 bd-highlight fw-normal text-end text-2 text-center-m">Contract value:</div>
+							<div class="col-sm-4 col-md-2 col-lg-2 p-1 pe-4 bd-highlight fw-normal text-end text-3 text-center-m">&dollar;510,000</div>
+						</div> -->
+						<section class="accordian" id="activityAccordian1" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('a1');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseActOne" aria-expanded="true" aria-controls="collapseActOne">
+					        	<div class="col-md-10 text-start">Activity for reporting period<br /><span class="text-1 text-normal">1 January 2022 – 31 December 2022v</span></div>
+					        	<div class="col-md-2 text-end pe-4"><img src="img/icon_expand_dark.png" class="exp" id="a1"></div>
+						      </button>
+					      </div>
+								<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse show" id="collapseActOne" data-bs-parent="#activityAccordian1">
+									<!--<div class="d-flex justify-content-start bd-highlight">-->
+									<!--<div class="row box-noborder btn-shadow pt-3 pb-3 rounded">
+										<div class="col-2 d-flex justify-content-start align-items-center p-0 ps-2 text-2">R725,410<br />Opening Value</div>
+										<div class="col-8" id="chartdivx"></div>
+										<div class="col-2 d-flex justify-content-start align-items-center p-0 ps-3 text-2">R510,000<br />Closing Value</div>
+									</div>-->
+
+									<article class="flow">
+							      <div class="articleContainer box-noborder justify-content-center btn-shadow">
+							        <div class="d-flex align-items-center box-noborder rounded">
+							        	<div class="text-bold text-2">&dollar;340,000<br /><span class="text-1-5">Opening Value</span></div>
+							        </div>
+							        <div class="box-noborder w-60 rounded">
+							        	<div id="chartdiv"></div>
+							        </div>
+							        <div class="d-flex align-items-center box-noborder rounded">
+							        	<div class="text-bold text-2">&dollar;510,000<br /><span class="text-1-5">Closing Value</span></div>
+							        </div>
+							      </div>
+									</article>
+
+								</div>
+							</div>
+						</section>
+						<section class="accordian" id="activityAccordian2" style="width:100%;text-align:center;margin:0 auto">
+							<div class="accordian-item">
+								<div class="ps-4 pe-4 pt-3"><hr></div>
+								<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+						      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('a2');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseActTwo" aria-expanded="true" aria-controls="collapseActTwo">
+					        	<div class="col-md-10 text-start">Transactions<br /><span class="text-1 text-normal">1 January 2022 – 31 December 2022v</span></div>
+					        	<div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="clps" id="a2"></div>
+						      </button>
+					      </div>
+								<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseActTwo" data-bs-parent="#activityAccordian2">
+									<div class="chartContainer btn-shadow" id="chartdivA2">
+										<table id="tableTransactions2" class="table table-primary table-striped table-bordered table-hover" cellspacing="0" width="100%">
+										</table>
+
+										<!--<table id="tableTransactions" class="table table-primary table-striped table-bordered table-hover" cellspacing="0" width="100%">
+											<thead>
+												<tr class="text-white">
+													<th>Date</th>
+													<th>Account</th>
+													<th>Fund</th>
+													<th>Transaction Type</th>
+													<th>Transaction Description</th>
+													<th>Price Per Unit</th>
+													<th>Units</th>
+													<th>Currency</th>
+													<th>Net Amount</th>
+													<th>&nbsp;</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>2022-01-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Annual Fees</td>
+													<td>Deferred Sales Charge (DSC)</td>
+													<td>18</td>
+													<td>0</td>
+													<td>USD</td>
+													<td>0</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_1">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-01-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Annual Fees</td>
+													<td>Front end commissions</td>
+													<td>18</td>
+													<td>0</td>
+													<td>USD</td>
+													<td>100</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_2">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-01-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Annual Fees</td>
+													<td>Service/trailer fees</td>
+													<td>18</td>
+													<td>0</td>
+													<td>USD</td>
+													<td>20</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_3">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-01-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Annual Fees</td>
+													<td>Deferred Sales Charge (DSC)</td>
+													<td>16</td>
+													<td>0</td>
+													<td>USD</td>
+													<td>0</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_4">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-01-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Annual Fees</td>
+													<td>Front end commissions</td>
+													<td>16</td>
+													<td>0</td>
+													<td>USD</td>
+													<td>150</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_5">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-01-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Annual Fees</td>
+													<td>Service/trailer fees</td>
+													<td>16</td>
+													<td>0</td>
+													<td>USD</td>
+													<td>20</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_6">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-01-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Annual Fees</td>
+													<td>Deferred Sales Charge (DSC)</td>
+													<td>20</td>
+													<td>0</td>
+													<td>USD</td>
+													<td>0</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_7">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-01-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Annual Fees</td>
+													<td>Front end commissions</td>
+													<td>20</td>
+													<td>0</td>
+													<td>USD</td>
+													<td>120</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_8">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-01-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_9">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-01-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_10">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-01-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_11">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-02-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_12">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-02-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_13">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-02-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_14">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-03-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_15">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-03-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_16">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-03-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_17">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-03-31</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Additional Investment</td>
+													<td>180</td>
+													<td>2</td>
+													<td>USD</td>
+													<td>360</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_18">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-04-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_19">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-04-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_20">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-04-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_21">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-05-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_22">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-05-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_23">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-05-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_24">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-06-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_25">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-06-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_26">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-06-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_27">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-06-30</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Additional Investment</td>
+													<td>180</td>
+													<td>2</td>
+													<td>USD</td>
+													<td>360</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_28">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-06-30</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Investment Growth</td>
+													<td>Distributions</td>
+													<td>200</td>
+													<td>50</td>
+													<td>USD</td>
+													<td>10000</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_29">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-06-30</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Investment Growth</td>
+													<td>Distributions</td>
+													<td>200</td>
+													<td>50</td>
+													<td>USD</td>
+													<td>10000</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_30">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-06-30</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Investment Growth</td>
+													<td>Distributions</td>
+													<td>200</td>
+													<td>25</td>
+													<td>USD</td>
+													<td>5000</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_31">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-06-30</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Investment Growth</td>
+													<td>Distributions</td>
+													<td>200</td>
+													<td>25</td>
+													<td>USD</td>
+													<td>5000</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_32">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-06-30</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Investment Growth</td>
+													<td>Distributions</td>
+													<td>200</td>
+													<td>13</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_33">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-07-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_34">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-07-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_35">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-07-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_36">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-08-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_37">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-08-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_38">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-08-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_39">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-09-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_40">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-09-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_41">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-09-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_42">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-09-30</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Investment Growth</td>
+													<td>Distributions</td>
+													<td>200</td>
+													<td>50</td>
+													<td>USD</td>
+													<td>10000</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_43">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-09-30</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Investment Growth</td>
+													<td>Distributions</td>
+													<td>200</td>
+													<td>25</td>
+													<td>USD</td>
+													<td>5000</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_44">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-09-30</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Investment Growth</td>
+													<td>Distributions</td>
+													<td>200</td>
+													<td>13</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_45">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-10-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_46">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-10-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_47">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-10-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_48">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-11-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_49">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-11-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_50">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-11-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_51">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-12-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>180</td>
+													<td>9</td>
+													<td>USD</td>
+													<td>1666.67</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_52">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-12-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>160</td>
+													<td>16</td>
+													<td>USD</td>
+													<td>2500</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_53">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-12-01</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Contributions</td>
+													<td>Debit Order</td>
+													<td>200</td>
+													<td>29</td>
+													<td>USD</td>
+													<td>5833</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_54">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-12-31</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Contributions</td>
+													<td>Additional Investment</td>
+													<td>180</td>
+													<td>2</td>
+													<td>USD</td>
+													<td>360</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_55">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-12-31</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Bond Fund A</td>
+													<td>Investment Growth</td>
+													<td>Interest</td>
+													<td>160</td>
+													<td>7</td>
+													<td>USD</td>
+													<td>1050</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_56">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-12-31</td>
+													<td>1-9000-2244</td>
+													<td>DXM US Equity Fund B1</td>
+													<td>Investment Growth</td>
+													<td>Interest</td>
+													<td>200</td>
+													<td>28</td>
+													<td>USD</td>
+													<td>5600</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_57">❓</span>
+													</td>
+												</tr>
+												<tr>
+													<td>2022-12-31</td>
+													<td>1-9000-2244</td>
+													<td>DXM UA Bond Fund B1</td>
+													<td>Investment Growth</td>
+													<td>Interest</td>
+													<td>160</td>
+													<td>4</td>
+													<td>USD</td>
+													<td>700</td>
+													<td>
+														<span href="#" class="btn p-0 text-2" data-bs-toggle="modal" data-bs-target="#trnQuery" alt="Want to query this transaction?" title="Want to query this transaction?" id="trn_58">❓</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>-->
+
+									</div>
+								</div>
+					    </div>
+					  </section>
+				</div>
+		  </div>
+		  <div id="downloads" class="pt-5 contentContainer" style="display:none">
+				<div class="p-0 bd-highlight breakdownHeader text-lightbrown text-normal text-2 text-shadow-def">
+					<div class="col-sm-12 col-md-12 col-lg-12 p-1 ps-3 bd-highlight fw-normal text-start text-3 text-center-m" style="line-height: 100%;">
+						Downloads
+					</div>
+				</div>
+				<div class="p-0 bd-highlight mb-2">
+					<section class="accordian" id="downloadAccordian1" style="width:100%;text-align:center;margin:0 auto">
+						<div class="accordian-item">
+							<div class="ps-4 pe-4 pt-3"><hr></div>
+							<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+					      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('d1');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDlOne" aria-expanded="true" aria-controls="collapseDlOne">
+				        	<div class="col-md-10 text-start">Statements</div>
+				        	<div class="col-md-2 text-end pe-4"><img src="img/icon_expand_dark.png" class="exp" id="d1"></div>
+					      </button>
+				      </div>
+							<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse show" id="collapseDlOne" data-bs-parent="#downloadAccordian1">
+								<div class="col-md-12 text-start">Click <a href="docs/DXM Wealth Annual Statement - 12312022.pdf" target="_blank" class="text-bold">here</a> to download the PDF version of this statement.</div>
+							</div>
+				    </div>
+				  </section>
+					<section class="accordian" id="downloadAccordian2" style="width:100%;text-align:center;margin:0 auto">
+						<div class="accordian-item">
+							<div class="ps-4 pe-4 pt-3"><hr></div>
+							<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+					      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('d2');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDlTwo" aria-expanded="true" aria-controls="collapseDlTwo">
+				        	<div class="col-md-10 text-start">Tax Certificates</div>
+				        	<div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="clps" id="d2"></div>
+					      </button>
+				      </div>
+							<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseDlTwo" data-bs-parent="#downloadAccordian2">
+								<div class="col-md-12 text-start">Please select the year for which you require the tax certificate.</div>
+								<div class="col-md-2 pt-2">
+									<select class="form-control" name="" id="selectTaxYear">
+										<option value="0">-- Year --</option>
+										<option value="2019">2019</option>
+										<option value="2020">2020</option>
+										<option value="2021">2021</option>
+										<option value="2022">2022</option>
+									</select>
+								</div>
+								<div class="d-flex justify-content-start pt-3">
+									<!--<button type="button" class="btn btn-secondary text-1">Close</button>-->
+								  <!--<button type="button" id="btnDownloadTax" class="btn btn-secondary text-1">Retrieve</button>-->
+								  <a href="docs/DXM Wealth Tax Certificate - 12312022.pdf" target="_blank" type="button" id="btnDownloadTax" class="btn btn-secondary disabled text-1">Download</a>
+								</div>
+							</div>
+				    </div>
+				  </section>
+					<section class="accordian" id="downloadAccordian3" style="width:100%;text-align:center;margin:0 auto">
+						<div class="accordian-item">
+							<div class="ps-4 pe-4 pt-3"><hr></div>
+							<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+					      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('d3');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDlThree" aria-expanded="true" aria-controls="collapseDlThree">
+				        	<div class="col-md-10 text-start">Fact Sheets</div>
+				        	<div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="clps" id="d3"></div>
+					      </button>
+				      </div>
+							<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseDlThree" data-bs-parent="#downloadAccordian3">
+								<div class="col-md-12 text-start">You can download all factsheets <a href="docs/Download PDFs.zip" target="_blank" class="text-bold">here</a></div>
+							</div>
+				    </div>
+				  </section>
+				</div>
+		  </div>
+		  <div id="faq" class="pt-5 contentContainer" style="display:none">
+				<div class="p-0 bd-highlight breakdownHeader text-lightbrown text-normal text-2 text-shadow-def">
+					<div class="col-sm-12 col-md-12 col-lg-12 p-1 ps-3 bd-highlight fw-normal text-start text-3 text-center-m" style="line-height: 100%;">
+						Frequently Asked Questions
+					</div>
+				</div>
+				<div class="p-0 bd-highlight mb-2">
+					<section class="accordian" id="faqAccordian1" style="width:100%;text-align:center;margin:0 auto">
+						<div class="accordian-item">
+							<div class="ps-4 pe-4"><hr></div>
+							<div class="ps-4 fw-bold text-start text-blue text-1-5">
+					      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('f1');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFAQOne" aria-expanded="true" aria-controls="collapseFAQOne">
+				        	<div class="col-md-10 text-start">What's New</div>
+				        	<div class="col-md-2 text-end pe-4"><img src="img/icon_expand_dark.png" class="exp" id="f1"></div>
+					      </button>
+				      </div>
+							<div class="ps-5 pe-5 accordian-collapse collapse show" id="collapseFAQOne" data-bs-parent="#faqAccordian1">
+								<div class="col-md-12 text-start">
+									<p>
+										As we celebrate the New Year and we recover from the pandemic, I'd like to take this opportunity to offer best wishes and thank you for choosing DXM Financial.<br />
+										We have just completed a year that saw markets rise, yet with considerable volatility and uncertainty. In a year marked by these uncertainties, our measured approach to investing helped withstand this volatility.<br />
+										<br />
+										Please contact me if you want to review your current investment portfolio, risk tolerance and asset mix.
+									</p>
+								</div>
+							</div>
+				    </div>
+				  </section>
+					<section class="accordian" id="faqAccordian2" style="width:100%;text-align:center;margin:0 auto">
+						<div class="accordian-item">
+							<div class="ps-4 pe-4"><hr></div>
+							<div class="ps-4 fw-bold text-start text-blue text-1-5">
+					      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('f2');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFAQTwo" aria-expanded="true" aria-controls="collapseFAQTwo">
+				        	<div class="col-md-10 text-start">Changes to your Account &amp; Transaction information</div>
+				        	<div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="clps" id="f2"></div>
+					      </button>
+				      </div>
+							<div class="ps-5 pe-5 accordian-collapse collapse" id="collapseFAQTwo" data-bs-parent="#faqAccordian2">
+								<div class="col-md-12 text-start">
+									<p>
+										Please let your Investment Advisor or Branch Manager know if there are any changes in you personal or financial situation so that we can ensure you are on track to meet your investment objectives.<br />
+										<br />
+										Client cash balances in non-registered accounts are held by DXM Financial, and client cash balances in registered accounts are held in DXM Trust.<br />
+										<br />
+										We are required to disclose to the Canada Revenue Agency all transactions involving the disposition of securities even if no tax forms are produced for such transactions. Therefore, please retain this Account Statement for income tax purposes.<br />
+										<br />
+										A free credit balance represents funds payable on demand which, although properly recorded in our books, are not segregated and may be used in the conduct of our business. All security positions displayed are segregated unless otherwise indicated. Should there be a security in which the account holds a portion of the quantity segregated and a portion registered in your name, this will be indicated under the security description column.<br />
+										<br />
+										A copy of our most recent statement of our financial condition and a list of directors and senior officers are available on request. Clients in British Columbia are entitled to certain information about DXM Financial, including information about commission and fees, and any administrative proceeding that may relate to the firm and its staff. For Related and Connected Issuer and Conflicts of Interest Statement, please visit our website: https://www.dxm.com/dxmprivatewealth/about /regulatory_documents_conflicts_of_interest.
+									</p>
+								</div>
+							</div>
+				    </div>
+				  </section>
+					<section class="accordian" id="faqAccordian3" style="width:100%;text-align:center;margin:0 auto">
+						<div class="accordian-item">
+							<div class="ps-4 pe-4"><hr></div>
+							<div class="ps-4 fw-bold text-start text-blue text-1-5">
+					      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('f3');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFAQThree" aria-expanded="true" aria-controls="collapseFAQThree">
+				        	<div class="col-md-10 text-start">Price of the securities</div>
+				        	<div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="clps" id="f3"></div>
+					      </button>
+				      </div>
+							<div class="ps-5 pe-5 accordian-collapse collapse" id="collapseFAQThree" data-bs-parent="#faqAccordian3">
+								<div class="col-md-12 text-start">
+									<p>
+										We strive to provide accurate and current prices for securities. However, because we use numerous information sources for pricing, we cannot guarantee pricing accuracy for securities. Please call your Investment Advisor for the most current prices.<br />
+										<br />
+										The Average Cost and Total Cost for long positions incorporates the book cost of your investment, comprised of, the total amount paid, transaction charges, commissions and fees, adjusted for any corporate actions, reinvested distributions and return of capital. The Average Cost and Total Cost for short positions incorporates the book cost of your investment comprised of the total amount received, net of any transaction charges, commissions and fees, adjusted for distributions (other than dividends), returns of capital and corporate actions. Book costs on transferred in securities reflects the book cost provided by the transferring institution, or if not provided, the market value on the date of the transfer.
+									</p>
+								</div>
+							</div>
+				    </div>
+				  </section>
+					<section class="accordian" id="faqAccordian4" style="width:100%;text-align:center;margin:0 auto">
+						<div class="accordian-item">
+							<div class="ps-4 pe-4"><hr></div>
+							<div class="ps-4 fw-bold text-start text-blue text-1-5">
+					      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('f4');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFAQFour" aria-expanded="true" aria-controls="collapseFAQFour">
+				        	<div class="col-md-10 text-start">Deferred Sales Charge (DSC)</div>
+				        	<div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="clps" id="f4"></div>
+					      </button>
+				      </div>
+							<div class="ps-5 pe-5 accordian-collapse collapse" id="collapseFAQFour" data-bs-parent="#faqAccordian4">
+								<div class="col-md-12 text-start">
+									<p>
+										Securities with "Deferred Sales Charge" in the security description may be subject to deferred sales charges when sold.
+									</p>
+								</div>
+							</div>
+				    </div>
+				  </section>
+					<section class="accordian" id="faqAccordian5" style="width:100%;text-align:center;margin:0 auto">
+						<div class="accordian-item">
+							<div class="ps-4 pe-4"><hr></div>
+							<div class="ps-4 fw-bold text-start text-blue text-1-5">
+					      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('f5');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFAQFive" aria-expanded="true" aria-controls="collapseFAQFive">
+				        	<div class="col-md-10 text-start">Investor protection</div>
+				        	<div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="clps" id="f5"></div>
+					      </button>
+				      </div>
+							<div class="ps-5 pe-5 accordian-collapse collapse" id="collapseFAQFive" data-bs-parent="#faqAccordian5">
+								<div class="col-md-12 text-start">
+									<p>
+										Clients' accounts are protected by the Canadian Investor Protection Fund (CIPF) within specified limits. A brochure describing the nature and limits of coverage is available upon request.<br />
+										<br />
+										For Preferred accounts, deposits in your Canadian dollar bank account with DXM Financial are insurable under the Canada Deposit Insurance Corporate Act (CDIC).
+									</p>
+								</div>
+							</div>
+				    </div>
+				  </section>
+				</div>
+		  </div>
+		  <div id="contactus" class="pt-5 contentContainer" style="display:none">
+				<div class="p-0 bd-highlight breakdownHeader text-lightbrown text-normal text-2 text-shadow-def">
+					<div class="col-sm-12 col-md-12 col-lg-12 p-1 ps-3 bd-highlight fw-normal text-start text-3 text-center-m" style="line-height: 100%;">
+						Contact Us
+					</div>
+				</div>
+				<div class="p-0 bd-highlight mb-2">
+					<section class="accordian" id="contactAccordian1" style="width:100%;text-align:center;margin:0 auto">
+						<div class="accordian-item">
+							<div class="ps-4 pe-4 pt-3"><hr></div>
+							<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+					      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('c1');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContactOne" aria-expanded="true" aria-controls="collapseContactOne">
+				        	<div class="col-md-10 text-start">Need help? Contact your advisor</div>
+				        	<div class="col-md-2 text-end pe-4"><img src="img/icon_expand_dark.png" class="exp" id="c1"></div>
+					      </button>
+				      </div>
+							<div class="ps-5 pe-5 accordian-collapse collapse show" id="collapseContactOne" data-bs-parent="#contactAccordian1">
+								<div class="genericContainer justify-content-evenly">
+									<div class="box rounded-3 text-start">
+										<div class="d-flex text-2 text-bold">John Smith​</div>
+										<div class="d-flex text-2 text-bold">Advisor</div>
+										<div class="d-flex text-1-5"><em>DXM Financial</em></div>
+										<div class="d-flex text-1-5 ps-5">e. jsmith@dxmfinancial.com</div>
+										<div class="d-flex text-1-5 ps-5">m. 416-123-4567</div>
+										<div class="d-flex text-1-5 ps-5">a. 123 Main St. Cityville, ON, M1A 2B2</div>
+									</div>
+									<div class="box rounded-3">
+										<div class="w-100">
+							        <div class="pb-2">
+												<select class="form-control" name="" id="selectAccount">
+													<option value="0">-- Select Account --</option>
+													<option value="invest">Investment</option>
+													<option value="rif">RIF</option>
+												</select>
+											</div>
+							        <div class="pb-2">
+												<select class="form-control" name="" id="selectFund">
+													<option value="0">-- Select Fund --</option>
+												</select>
+											</div>
+							        <div>
+												<textarea class="form-control" type="textarea" rows="4" placeholder="Type message" id=""></textarea>
+											</div>
+								      <div class="d-flex justify-content-end pt-2">
+								        <!--<button type="button" class="btn btn-secondary text-1">Close</button>-->
+								        <button type="button" id="" class="btn btn-primary text-1">Send Message</button>
+								      </div>
+						        </div>
+									</div>
+								</div>
+							</div>
+				    </div>
+				  </section>
+					<section class="accordian" id="contactAccordian2" style="width:100%;text-align:center;margin:0 auto">
+						<div class="accordian-item">
+							<div class="ps-4 pe-4 pt-3"><hr></div>
+							<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+					      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('c2');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContactTwo" aria-expanded="true" aria-controls="collapseContactTwo">
+				        	<div class="col-md-10 text-start">Contact details​</div>
+				        	<div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="clps" id="c2"></div>
+					      </button>
+				      </div>
+							<div class="ps-5 pe-5 accordian-collapse collapse" id="collapseContactTwo" data-bs-parent="#contactAccordian2">
+								<div class="genericContainer justify-content-evenly">
+									<div class="box rounded-3 text-start">
+										<div class="d-flex text-1-5 text-bold"><em>DXM Financial</em></div>
+										<div class="d-flex text-1-5">401 Bay St.</div>
+										<div class="d-flex text-1-5">Toronto, ON</div>
+										<div class="d-flex text-1-5">M5H 2Y4,</div>
+										<div class="d-flex text-1-5">Canada</div>
+										<div class="d-flex text-1-5 pt-3">www.DXMFinancial.com</div>
+									</div>
+									<div class="box rounded-3">
+										<div class="w-100">
+											<div class="ratio ratio-4x3">
+											  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1302.7128205203678!2d-79.38259614192597!3d43.65176869319162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cd276ce591%3A0xd7ab533f25c356ef!2sSimpson%20Tower!5e1!3m2!1sen!2sza!4v1685624581373!5m2!1sen!2sza" title="Google Maps"loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen width="600" height="450" style="border:0;"></iframe>
+											</div>
+						        </div>
+									</div>
+								</div>
+							</div>
+				    </div>
+				  </section>
+					<section class="accordian" id="contactAccordian3" style="width:100%;text-align:center;margin:0 auto">
+						<div class="accordian-item">
+							<div class="ps-4 pe-4 pt-3"><hr></div>
+							<div class="ps-4 pb-3 fw-bold text-start text-blue text-1-5">
+					      <button class="fw-bold text-start text-blue text-1-5 accordion-button" onclick="updateAccordianControl ('c3');" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContactThree" aria-expanded="true" aria-controls="collapseContactThree">
+				        	<div class="col-md-10 text-start">Follow us</div>
+				        	<div class="col-md-2 text-end pe-4"><img src="img/icon_collapse_dark.png" class="clps" id="c3"></div>
+					      </button>
+				      </div>
+							<div class="ms-5 me-5 ps-5 pe-5 accordian-collapse collapse" id="collapseContactThree" data-bs-parent="#contactAccordian3">
+								<div class="genericContainer justify-content-evenly">
+									<!-- Facebook -->
+									<a class="btn btn-primary btn-lg socialRounded text-center text-3 p-0 pt-4 btn-facebook" href="#!" role="button">
+  									<i class="fab fa-facebook-f fa-2x"></i>
+  								</a>
+
+									<!-- Linkedin -->
+									<a class="btn btn-primary btn-lg socialRounded text-center text-3 p-0 pt-4 btn-linkedin" href="#!" role="button">
+										<i class="fab fa-linkedin-in fa-2x"></i>
+  								</a>
+
+									<!-- Twitter -->
+									<a class="btn btn-primary btn-lg socialRounded text-center text-3 p-0 pt-4 btn-twitter" href="#!" role="button">
+										<i class="fab fa-twitter fa-2x"></i>
+  								</a>
+
+									<!-- Youtube -->
+									<div class="text-center">
+										<a class="btn btn-primary btn-lg socialRounded text-center text-3 p-0 pt-4 btn-youtube" href="#!" role="button">
+											<i class="fab fa-youtube fa-2x"></i>
+	  								</a>
+	  							</div>
+
+									<!-- Instagram -->
+									<a class="btn btn-primary btn-lg socialRounded text-center text-3 p-0 pt-4 btn-instagram" href="#!" role="button">
+										<i class="fab fa-instagram fa-2x"></i>
+									</a>
+								</div>
+							</div>
+				    </div>
+				  </section>
+		  </div>
+	  </div>
+
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="liveChat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title text-uppercase" id="myModalLabel">Live Chat Online</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body text-start">
+						<strong>Welcome! You are chatting with your financial advisor, <em>John</em></strong>
+						<br />
+						<div class="chatBox form-inline">
+							<div class="chatInner">
+								<p><span class="text-darkblue">John:</span> Hi Mr. Baldwin. How can I help you today?</p>
+							</div>
+							<br />
+							<input class="form-control" type="text" id="chatSendMessage" placeholder="Type Message...">
+							<br /><br />
+							<br />
+						</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary text-1" data-bs-dismiss="modal">Close</button>
+		        <button type="button" id="chatSubmit" class="btn btn-primary text-1">Send Message</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade" id="setReminder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title text-uppercase" id="myModalLabel">Set Payment Reminder</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body text-start">
+			      <div class="genericContainer justify-content-evenly">
+			        <div class="w-47">
+				        <div class="pb-2">
+									<select class="form-control" name="" id="">
+										<option value="">-- Reminder Frequency --</option>
+										<option value="">Monthly</option>
+										<option value="">Quarterly</option>
+										<option value="">Annually</option>
+									</select>
+								</div>
+				        <div class="pb-2">
+									<select class="form-control" name="" id="reminderType">
+										<option value="">-- Reminder Type --</option>
+										<option value="Enter your SMS Number...">SMS</option>
+										<option value="Enter your Email Address...">Email</option>
+									</select>
+								</div>
+				        <div>
+									<input class="form-control" type="text" placeholder="" id="reminderNotice"/>
+								</div>
+			        </div>
+			        <div class="w-47 text-left">
+			        	<h5 class="text-start text-black text-bold text-1">Note</h5>
+			        	<!--<div class="text-start text-black small">Monthly reminders will be sent on the 25th of every month.</div>-->
+			        	<div class="text-start text-black small pb-2">Reminders will be sent on the last day of each month / period.</div>
+			        </div>
+			        <!--<div class="box rounded-4 btn-shadow">Item two</div>
+			        <div class="box rounded-4 btn-shadow">Item three</div>
+			        <div class="box rounded-4 btn-shadow">Item four has more text</div>
+			        <div class="box rounded-4 btn-shadow">A long word: Myrmecophilous A long word: Myrmecophilous A long word: Myrmecophilous A long word: Myrmecophilous A long word: Myrmecophilous</div>
+			        <div class="box rounded-4 btn-shadow">Item six</div>-->
+			      </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary text-1" data-bs-dismiss="modal">Close</button>
+		        <button type="button" id="chatSubmit" class="btn btn-primary text-1" data-bs-dismiss="modal">Set Reminder</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade" id="stmPref" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title text-uppercase" id="myModalLabel">Statement Preferences</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body text-start">
+		      	<h3 class="text-bold ">Show me the following sections:</h3>
+			      <div class="genericContainer">
+							<div class="w-47">
+								<div><input type="checkbox" checked> <span><strong>Investment Account</strong></span></div>
+								<div><input type="checkbox" checked disabled> <span>Trends / Analysis</span></div>
+								<div><input type="checkbox" checked> <span>Holdings</span></div>
+								<div><input type="checkbox" checked> <span>Activity &amp; Transactions</span></div>
+								<div><input type="checkbox" checked> <span>PDF</span></div>
+							</div>
+							<div class="w-47">
+								<div><input type="checkbox" checked> <span><strong>Retirement Income Fund</strong></span></div>
+								<div><input type="checkbox" checked disabled> <span>Trends / Analysis</span></div>
+								<div><input type="checkbox" checked> <span>Holdings</span></div>
+								<div><input type="checkbox" checked> <span>Activity &amp; Transactions</span></div>
+								<div><input type="checkbox" checked> <span>PDF</span></div>
+							</div>
+							<!--<div class="w-29">
+								<div><input type="checkbox" checked> <span><strong>Insurance</strong></span></div>
+								<div><input type="checkbox" checked disabled> <span>Summary</span></div>
+								<div><input type="checkbox" checked> <span>Trends / Analysis</span></div>
+								<div><input type="checkbox" checked> <span>Submit a Claim</span></div>
+								<div><input type="checkbox" checked> <span>PDF Summary</span></div>
+								<div><input type="checkbox" checked> <span>Full PDF Download</span></div>
+							</div>-->
+							<div class="w-100" style="margin-top:-5px;">
+								<div><input type="checkbox" checked> <span><strong>Contact Us</strong></span></div>
+							</div>
+						</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary text-1" data-bs-dismiss="modal">Close</button>
+		        <button type="button" id="chatSubmit" class="btn btn-primary text-1" data-bs-dismiss="modal">Save Preferences</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+		<div class="modal fade" id="trnQuery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title text-uppercase" id="myModalLabel">Query/ Dispute Transaction</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body text-start pb-0">
+		      	<h3 class="text-bold ">Transaction Details:</h3>
+						<div class="genericContainer justify-content-start p-0">
+							<div class="box-noborder-no-bg w-100 rounded-3 text-start" id="trnDetails">
+								<!--<div class="d-flex text-1 text-normal"><b>Date:&nbsp;</b>2022-01-01</div>
+								<div class="d-flex text-1 text-normal"><b>Description:&nbsp;</b>Deferred Sales Charge (DSC)</div>
+								<div class="d-flex text-1"><b>Reference:&nbsp;</b>12345678912300</div>
+								<div class="d-flex text-1"><b>Amount:&nbsp;</b>&dollar;0.00</div>
+								<div class="d-flex text-1 pt-3"><b>Reason for query/ dispute:</b></div>
+								<div class="d-flex text-1">
+									<textarea class="form-control" type="textarea" rows="4" placeholder="Enter reason" id=""></textarea>
+								</div>-->
+							</div>
+						</div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary text-1" data-bs-dismiss="modal">Close</button>
+		        <button type="button" id="querySubmit" class="btn btn-primary text-1" data-bs-dismiss="modal">Submit</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+		<script src="js/jquery360.min.js"></script>
+		<script src="js/functions.js"></script>
+		<!--<script src="js/jquery_dataTables_min.js"></script>
+		<script src="js/dataTables_bootstrap.js"></script>
+		<script src="js/dataTables.responsive.js"></script>-->
+
+		<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+		<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+		<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+		<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+		<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+	</body>
+</html>
