@@ -2868,6 +2868,9 @@ function populateTrnModal (whichTrnId)
 
 function showContent (whichId, whichAccType)
 {
+	// first hide mobile menu
+	$('#navbarTogglerDemo03').removeClass ('show');
+
 	//console.log('whichId::'+whichId);
 	//console.log('whichAccType::'+whichAccType);
 	var mnuArr = ['home', 'products', 'activity', 'downloads', 'faq', 'contactus'];
