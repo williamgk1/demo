@@ -226,6 +226,11 @@ div.dataTables_info {
 /***********************************************************************/
 /*bootstrap extend end*/
 /***********************************************************************/
+/*#liveBalance {
+	flex-wrap: nowrap;
+}*/
+
+
 .wordBreak { word-wrap: break-word }
 
 .btn-white {
@@ -839,3 +844,55 @@ div.dataTables_info {
   }
 }	
 /* ============ small devices .end// ============ */
+
+
+
+
+
+@media only screen and (max-width: 338px) {
+	.navbar>.container-fluid {
+		display:block;
+	}
+
+	.sticky {
+    position: static;
+  }
+
+  #activity {
+  	padding-top: 0 !important;
+  }
+
+  #actAccInvest {
+  	padding-top: 3rem !important;
+  }
+
+  #actAccRIF {
+  	padding-top: 3rem !important;
+  }
+
+  #products {
+  	padding-top: 0 !important;
+  }
+
+  #prodAccInvest {
+  	padding-top: 3rem !important;
+  }
+
+  #prodAccRIF {
+  	padding-top: 3rem !important;
+  }
+
+  .contentWrapper {
+  	padding-top: 0 !important;
+  }
+
+  .contentContainer {
+  	padding-top: 0 !important;
+  }
+
+  .col-xs-12 {
+    flex: 0 0 auto;
+    width: 88%;
+    padding-left: 1rem;
+  }
+}
