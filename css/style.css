@@ -136,7 +136,7 @@ th {
 }
 
 img, svg {
-	margin-top: 20px;
+	margin-top: 0px;
 	vertical-align: top;
 }
 
@@ -672,6 +672,7 @@ div.dataTables_info {
 
 	.subnav {
 		width: 100%;
+		align-content: space-evenly!important;
 	}
 
 	.articleContainer {
@@ -791,6 +792,67 @@ div.dataTables_info {
 		width: 100%;
 	}
 
+
+
+  #activity {
+  	padding-top: 0 !important;
+  }
+
+  #actAccInvest {
+  	padding-top: 3rem !important;
+  }
+
+  #actAccRIF {
+  	padding-top: 3rem !important;
+  }
+
+  #products {
+  	padding-top: 0 !important;
+  }
+
+  #prodAccInvest {
+  	padding-top: 3rem !important;
+  }
+
+  #prodAccRIF {
+  	padding-top: 3rem !important;
+  }
+
+  .genericContainer {
+  	padding: 0 !important;
+  }
+
+  .box {
+  	/*padding: 0 !important;*/
+  	width: 27rem;
+  }
+
+  .psm-0 {
+  	padding-left: 0 !important;
+  }
+
+  #collapseContactOne {
+  	padding: 1rem !important;
+  }
+
+  #collapseContactTwo {
+  	padding: 1rem !important;
+  }
+
+  #collapseContactThree {
+  	padding: 1rem !important;
+  }
+
+  .col-xs-12 {
+    flex: 0 0 auto;
+    width: 88%;
+    padding-left: 1rem;
+  }
+
+	.spacer-top {
+		height: 6vh;
+		width: 100%;
+	}
 }
 
 
@@ -849,14 +911,24 @@ div.dataTables_info {
 
 
 
-@media only screen and (max-width: 338px) {
+@media only screen and (max-width: 450px) {
 	.navbar>.container-fluid {
-		display:block;
+		/*display:block;*/
 	}
 
-	.sticky {
+/*	.sticky {
     position: static;
-  }
+  }*/
+
+	.spacer-top {
+		height: 13vh;
+		width: 100%;
+	}
+
+	.spacer-top2 {
+		height: 20vh;
+		width: 100%;
+	}
 
   #activity {
   	padding-top: 0 !important;
@@ -890,9 +962,69 @@ div.dataTables_info {
   	padding-top: 0 !important;
   }
 
+  .genericContainer {
+  	padding: 0 !important;
+  }
+
+  .box {
+  	/*padding: 0 !important;*/
+  	width: 95%;
+  }
+
+  #collapseContactOne {
+  	padding: 1rem !important;
+  }
+
+  #collapseContactTwo {
+  	padding: 1rem !important;
+  }
+
+  #collapseContactThree {
+  	padding: 1rem !important;
+  }
+
   .col-xs-12 {
     flex: 0 0 auto;
-    width: 88%;
+    width: 96%;
     padding-left: 1rem;
+  }
+
+  .pm-06 {
+  	padding: 0.6rem !important;
+  }
+
+  .psm-0 {
+  	padding-left: 0 !important;
+  }
+
+  .text-1-5 {
+  	font-size: 1rem !important;
+  }
+
+  .textm-1-5 {
+  	font-size: 1.5rem !important;
+  }
+
+  .text-6 {
+  	font-size: 3.75rem !important;
+  }
+
+  .desktopOnly {
+  	display:none;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+	.spacer-top {
+		height: 22vh;
+		width: 100%;
+	}
+
+  .desktopOnly {
+  	display: none !important;
+  }
+
+  .pm-06 {
+  	padding: 0.6 !important;
   }
 }
