@@ -75,6 +75,27 @@ $(document).ready
 			// 		}
 			// 	);
 
+			$(document).on
+			(
+				'show','#mobileIndicator', 
+				function(){
+					updateTable ('tableTransactions2');
+				}
+			);
+
+			//$('#mobileIndicator').bind ('keypress', {}, keypressInBox);
+			$("#mobileIndicator").on
+				(
+					'change',
+					function()
+					{
+						if ($('#mobileIndicator').is (':visible'))
+						{
+							updateTable ('tableTransactions2');
+						}
+					}
+				);
+
 			$('.mnu').on
 				(
 					'click',
@@ -184,7 +205,9 @@ $(document).ready
 				populateTable ('tableTransactions2');
 				$('#tableTransactions').dataTable(
 				{
-
+					responsive: true,
+					autofill: true,
+					"scrollx": true
 				});
 
 				$("#selectTaxYear").change(function() {
@@ -2739,6 +2762,15 @@ var chart = AmCharts.makeChart("chartdiv", {
 			}); 
 			// DOMContentLoaded  end
 
+			if ($('#mobileIndicator').is (':visible'))
+			{
+				updateTable ('tableTransactions2');
+			}
+			
+			$(window).resize(function(){  //change in landscape and portrait view
+			   //fittabletoscreen(); 
+			   updateTable ('tableTransactions2');
+			});
 
 		}
 	);
@@ -2825,12 +2857,48 @@ function populateTable (tableId)
 			$('#'+tableId).dataTable(
 			{
 				responsive: true,
+				"scrollx": true,
 			});
+
+/*		  var table = $('#'+tableId).dataTable({
+		  	responsive: true,
+		    autoFill: true,
+				dom: 'QBlfrtip',
+		    buttons: [
+		      'csvHtml5', 'excelHtml5', 'pdfHtml5', 'print'
+		    
+				],
+				"scrollX": true,
+				"order": [[ 1, "asc" ]],
+				language: {
+					url: 'https://cdn.datatables.net/plug-ins/1.10.24/i18n/Italian.json',
+				},
+				orderCellsTop: true,
+		      initComplete: function () {
+					console.log('@@@ init complete @@@');
+					// $("body").removeClass("loading");
+					//table.columns.adjust();
+			}
+			});*/
+
+
 		}
 
 	}
 }
 
+
+/*function fittabletoscreen(){
+    if(jQuery(window).width()<700){
+      //hide all th,td and show only first and last
+      jQuery('table th, table td').hide();
+      jQuery('table th:first-child, table th:last-child, table td:first-child, table td:last-child').show();
+
+      //Optional to hide and show
+      //jQuery('table th, table td').css('display','none');
+      //jQuery('table th:first-child, table th:last-child, table td:first-child, table td:last-child').css('display','table-cell');
+   }
+}*/
 
 
 function populateTrnModal (whichTrnId)
@@ -2973,12 +3041,16 @@ function hightlightPeriod (whichId, doShow)
 	}
 }
 
+
+
 function showBreakdown (whichId)
 {
 	$("#summaryLg").hide();
 	$("#investments").hide();
 	$("#breakdown").show();
 }
+
+
 
 function updateAccordianControl (whichId)
 {
@@ -2997,4 +3069,34 @@ function updateAccordianControl (whichId)
 		$("#"+whichId).addClass ('clps');	
 		//console.log('2-'+$("#"+whichId).attr ('src'));
 	}
+}
+
+
+
+function updateTable (whichTable)	//tableTransactions2
+{
+	whichTable = 'tableTransactions2';
+	var totalColumns = 9;
+	var mobileColumns = ['0','1','8','9'];
+
+	//if ($('#mobileIndicator').hasClass('show'))
+	//if ($('#mobileIndicator').is (':visible'))
+	//{
+		//hide all columns
+		var eTable = $('#'+whichTable).DataTable();
+		for (i = 0; i <= totalColumns; i++)
+		{
+			var column = eTable.column( i );
+			column.visible(!column.visible());
+		}
+
+		//iterate through array of relevant column index and show relevant columns
+		var numColumns = mobileColumns.length;
+		for (j = 0; j < numColumns; j++)
+		{
+			var column = eTable.column( mobileColumns[j] );
+			column.visible (column.visible (true));
+		}
+	//}
+	
 }
