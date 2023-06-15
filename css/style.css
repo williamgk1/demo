@@ -60,6 +60,9 @@ p {
 	z-index: 2000;
 }
 
+#mobileIndicator {
+	display: none;
+}
 
 /***********************************************************************/
 /*bootstrap extend start*/
@@ -665,6 +668,11 @@ div.dataTables_info {
 
 
 @media only screen and (max-width: 600px) {
+
+	li.nav-item {
+		padding: 5px !important;
+	}
+
 	.col-sm-6 {
     flex: 0 0 auto;
     width: 100%;
@@ -853,6 +861,10 @@ div.dataTables_info {
 		height: 6vh;
 		width: 100%;
 	}
+
+	#mobileIndicator {
+		display: block;
+	}
 }
 
 
@@ -900,7 +912,10 @@ div.dataTables_info {
 /* ============ desktop view .end// ============ */
 
 /* ============ small devices ============ */
-@media (max-width: 991px) {
+@media (max-width: 992px) {
+	li.nav-item {
+		padding: 5px !important;
+	}
   .dropdown-menu .dropdown-menu{
       margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
   }
@@ -912,6 +927,10 @@ div.dataTables_info {
 
 
 @media only screen and (max-width: 450px) {
+	li.nav-item {
+		padding: 5px !important;
+	}
+
 	.navbar>.container-fluid {
 		/*display:block;*/
 	}
@@ -1012,9 +1031,41 @@ div.dataTables_info {
   .desktopOnly {
   	display:none;
   }
+
+	#mobileIndicator {
+		display: block;
+	}
 }
 
+@media only screen and (max-width: 375px) {
+	li.nav-item {
+		padding: 5px !important;
+	}
+
+	.spacer-top {
+		height: 15vh;
+		width: 100%;
+	}
+
+  .desktopOnly {
+  	display: none !important;
+  }
+
+  .pm-06 {
+  	padding: 0.6 !important;
+  }
+
+	#mobileIndicator {
+		display: block;
+	}
+}
+
+
 @media only screen and (max-width: 280px) {
+	li.nav-item {
+		padding: 5px !important;
+	}
+
 	.spacer-top {
 		height: 22vh;
 		width: 100%;
@@ -1027,4 +1078,8 @@ div.dataTables_info {
   .pm-06 {
   	padding: 0.6 !important;
   }
+
+	#mobileIndicator {
+		display: block;
+	}
 }
