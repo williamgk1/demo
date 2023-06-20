@@ -80,6 +80,8 @@ $(document).ready
 				'show','#mobileIndicator', 
 				function(){
 					updateTable ('tableTransactions2');
+					updateTable ('topHoldings1');
+					updateTable ('topHoldings2');
 				}
 			);
 
@@ -92,6 +94,8 @@ $(document).ready
 						if ($('#mobileIndicator').is (':visible'))
 						{
 							updateTable ('tableTransactions2');
+							updateTable ('topHoldings1');
+							updateTable ('topHoldings2');
 						}
 					}
 				);
@@ -208,6 +212,22 @@ $(document).ready
 					responsive: true,
 					autofill: true,
 					"scrollx": true
+				});
+
+				$('#topHoldings1').dataTable(
+				{
+					responsive: true,
+					autofill: true,
+					"scrollx": true
+				});
+
+				$('#topHoldings2').dataTable(
+				{
+					responsive: true,
+					autofill: true,
+					"scrollx": true
+					//,
+					//columns: [{width:'5%'},{width:'10%'},{width:'5%'},{width:'5%'},{width:'10%'},{width:'10%'},{width:'10%'},{width:'45%'}]
 				});
 
 				$("#selectTaxYear").change(function() {
@@ -2765,11 +2785,15 @@ var chart = AmCharts.makeChart("chartdiv", {
 			if ($('#mobileIndicator').is (':visible'))
 			{
 				updateTable ('tableTransactions2');
+			  updateTable ('topHoldings1');
+			  updateTable ('topHoldings2');
 			}
 			
 			$(window).resize(function(){  //change in landscape and portrait view
-			   //fittabletoscreen(); 
-			   updateTable ('tableTransactions2');
+				//fittabletoscreen(); 
+				updateTable ('tableTransactions2');
+				updateTable ('topHoldings1');
+				updateTable ('topHoldings2');
 			});
 
 		}
@@ -3075,28 +3099,61 @@ function updateAccordianControl (whichId)
 
 function updateTable (whichTable)	//tableTransactions2
 {
-	whichTable = 'tableTransactions2';
-	var totalColumns = 9;
-	var mobileColumns = ['0','1','8','9'];
+	//whichTable = 'tableTransactions2';
+	var totalColumns;
+	var mobileColumns;
 
-	//if ($('#mobileIndicator').hasClass('show'))
-	//if ($('#mobileIndicator').is (':visible'))
-	//{
-		//hide all columns
-		var eTable = $('#'+whichTable).DataTable();
-		for (i = 0; i <= totalColumns; i++)
-		{
-			var column = eTable.column( i );
-			column.visible(!column.visible());
-		}
+	if (whichTable === 'tableTransactions2')
+	{
+		totalColumns = 9;
+		mobileColumns = ['0','1','8','9'];
 
-		//iterate through array of relevant column index and show relevant columns
-		var numColumns = mobileColumns.length;
-		for (j = 0; j < numColumns; j++)
-		{
-			var column = eTable.column( mobileColumns[j] );
-			column.visible (column.visible (true));
-		}
-	//}
+/*		//if ($('#mobileIndicator').hasClass('show'))
+		//if ($('#mobileIndicator').is (':visible'))
+		//{
+			//hide all columns
+			var eTable = $('#'+whichTable).DataTable();
+			for (i = 0; i <= totalColumns; i++)
+			{
+				var column = eTable.column( i );
+				column.visible(!column.visible());
+			}
+
+			//iterate through array of relevant column index and show relevant columns
+			var numColumns = mobileColumns.length;
+			for (j = 0; j < numColumns; j++)
+			{
+				var column = eTable.column( mobileColumns[j] );
+				column.visible (column.visible (true));
+			}
+		//}*/
+	}
+	else if (whichTable === 'topHoldings1')
+	{
+		totalColumns = 3;
+		mobileColumns = ['0','2','3'];
+	}
+	else if (whichTable === 'topHoldings2')
+	{
+		totalColumns = 7;
+		mobileColumns = ['0','7'];
+	}
+
+
+	//hide all columns
+	var eTable = $('#'+whichTable).DataTable();
+	for (i = 0; i <= totalColumns; i++)
+	{
+		var column = eTable.column( i );
+		column.visible(!column.visible());
+	}
+
+	//iterate through array of relevant column index and show relevant columns
+	var numColumns = mobileColumns.length;
+	for (j = 0; j < numColumns; j++)
+	{
+		var column = eTable.column( mobileColumns[j] );
+		column.visible (column.visible (true));
+	}
 	
 }
